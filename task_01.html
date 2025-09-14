@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/lib/normalize.css">
+    <link rel="stylesheet" href="assests/lib/fontawesome-free-7.0.1-web/fontawesome-free-7.0.1-web/css/all.min.css">
+    <style>
+        section{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section>div{
+            background: blue;
+            width: 200px;
+            height: 30px;
+            padding: 20px;
+            margin: 10px 0px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            margin-left: -200px;
+            transition-duration: 3000ms;
+            color: white;
+        }
+
+        section>div:hover{
+            margin-left: 0px;
+        }
+
+          section>div>div, section>div>span {
+            position: absolute;
+
+            width: fit-content;
+            height: fit-content;
+
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section>div>div {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <span>Menu 01</span>
+            <div>
+            <i class="fa-solid fa-book"></i>
+        </div>
+        </div>
+        <div>
+        <span>Menu 02</span>
+        <div>
+            <i class="fa-solid fa-truck"></i>
+        </div>
+    </div>
+
+    <div>
+        <span>Menu 03</span>
+        <div>
+            <i class="fa-solid fa-users"></i>
+        </div>
+    </div>
+
+    <div>
+        <span>Menu 04</span>
+        <div>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+    </div>
+    </section>
+
+    <script src="assests/lib/fontawesome-free-7.0.1-web/fontawesome-free-7.0.1-web/js/all.min.js"></script>
+</body>
+</html>
