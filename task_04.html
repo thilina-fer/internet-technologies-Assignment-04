@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/lib/normalize.css">
+    <link rel="stylesheet" href="assests/lib/fontawesome-free-7.0.1-web/fontawesome-free-7.0.1-web/css/all.min.css">
+  <style>
+
+    div {
+      border: 4px solid blue;
+      border-radius: 100%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+      animation-name: water-drop;
+      animation-duration: 3000ms;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes water-drop {
+      from {
+        width: 60px;
+        aspect-ratio: 1/1;
+      }
+      to {
+        width: 600px;
+        aspect-ratio: 1/1;
+        opacity: 0;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
