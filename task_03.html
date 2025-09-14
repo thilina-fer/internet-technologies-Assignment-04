@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/lib/fontawesome-free-7.0.1-web/">
+    <style>
+
+        :root{
+            --section-width: 1000px;
+            --section-height: 700px;
+
+            --div-width: 200px;
+            --div-height: 100px;
+        }
+
+        section{
+            width: var(--section-width);
+            height: var(--section-height);
+            border: 3px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+
+        }
+
+        section>div{
+            height: var(--div-height);
+            width: var(--div-width);
+            background-color: yellow;
+            border-radius: 20px;
+            animation-name: squre;
+            animation-duration: 3000ms;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes squre{
+           0% {
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(0deg);
+            }
+            25% {
+                margin-left: calc(var(--section-width) - var(--div-width));
+                margin-top: 0;
+                transform: rotate(180deg);
+                background: red;
+            }
+            50% {
+                margin-left: calc(var(--section-width) - var(--div-width));
+                margin-top: calc(var(--section-height) - var(--div-height));
+                transform: rotate(360deg);
+                background: green;
+            }
+            75% {
+                margin-left: 0;
+                margin-top: calc(var(--section-height) - var(--div-height));
+                transform: rotate(540deg);
+                background: blue;
+            }
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(720deg);
+                background: pink;
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>
